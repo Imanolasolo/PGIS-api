@@ -1,0 +1,3 @@
+{
+    "presets": ["@babel/preset-env"] // @babel/preset-env is a preset that is used to transform the code to a new environment.
+}

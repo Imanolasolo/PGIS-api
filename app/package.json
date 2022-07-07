@@ -1,0 +1,52 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Private API for the app",
+  "main": "index.js",
+  "scripts": {
+    "babel-node": "babel-node --presets=@babel/preset-env",
+    "build": "babel src -d dist",
+    "dev": "nodemon --exec npm run babel-node src/index.js",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "node js",
+    "api",
+    "rest",
+    "private",
+    "mysql",
+    "database"
+  ],
+  "author": "IT4PROS",
+  "license": "ISC",
+  "dependencies": {
+    "@apidevtools/swagger-parser": "^10.1.0",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-myconnection": "^1.0.4",
+    "fast-csv": "^4.3.6",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "node-fetch": "^3.2.6",
+    "openapi-types": "^12.0.0",
+    "promise-mysql": "^5.2.0",
+    "promises": "^0.2.5",
+    "swagger-jsdoc": "^6.2.1",
+    "swagger-ui-express": "^4.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/node": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "eslint": "^8.18.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19"
+  }
+}
